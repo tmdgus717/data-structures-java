@@ -9,17 +9,20 @@
 - 리스트 특성
   - 데이터를 나란히 저장
   - 중복된 데이터의 저장 허용
-- 리스트의 ADT
+- 리스트의 ADT (교재와는 다르게 자바 기반으로 작성하므로 자바 구현체를 참조하여 구현한다)
   - init
     - java기반으로 작성하므로 생성자로 대체함
   - insert
-    - 교재 : insert(List *plist, Data data); 
+    - 교재 : int insert(List *plist, Data data); 
     - 위 코드는 C언어 기반이므로 plist 주소값이 필요하다고 생각된다.
-    - java 기반이므로 (Object data); 로 변경하도록 하겠다.
+    - java 기반이므로 E insert(data) 를 기반으로 작성하겠다.
   - first
-    - pdata가 가리키는 메모리에 저장
-    - 성공 시 true, 실패 시 false 반환
+    - 현재 위치 정보 = 0
+    - 처음 데이터를 반환
   - next
+    - 현재 위치 정보 증가
+    - 다음 데이터를 반환
   - remove
+    - 삭제하고 데이터 반환
   - count
   
